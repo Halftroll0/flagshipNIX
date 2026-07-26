@@ -12,6 +12,8 @@
       ./modules/audio.nix
       ./modules/desktop.nix
       ./modules/graphics.nix
+      ./modules/services.nix
+      ./modules/flatpak.nix
     ];
 
   # This value determines the NixOS release from which the default
@@ -28,13 +30,5 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  services.syncthing = {
-    enable = true;
-    user = "nathaniel";
-    group = "users";
-    dataDir = "/home/nathaniel";
-    configDir = "/home/nathaniel/.config/syncthing";
-    openDefaultPorts = true;
-  };
 
-}
+ }

@@ -1,7 +1,5 @@
 { pkgs, ... }:
 
-# List packages installed in system profile. To search, run:
-  # $ nix search wget
 {
   programs.firefox.enable = true;
   programs.steam.enable = true;
@@ -18,7 +16,6 @@
    discord-ptb
    unzip
    github-desktop
-   heroic
   ];
 }
 
